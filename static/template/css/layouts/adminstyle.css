@@ -1,0 +1,209 @@
+/*======= 页面配置=======  */
+body, html {margin: 0px;height: 100%;overflow:hidden;}
+.container {height: 100%;}
+.layout{height: 100%;}
+.side, .main {height: 100%; margin: 0;padding:0;}
+.lside{
+    overflow:hidden;
+    background: #353636;
+}
+.main{
+    background-color: #eee;
+}
+.rside{
+    overflow:hidden;
+    background: #7F7F7F;
+    display: none;
+}
+
+/* 顶部导航 */
+.navbar{border-radius: 0 !important;margin-bottom:0;}
+.navbar-inverse {
+    background-color: #353636;
+    border-color: rgba(82, 83, 83, 0.5);
+}
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+color: #fff;
+background-color: #1D1E1E;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #1D1E1E;
+}
+.sidenav-toggle {
+    float: right;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color:gray;
+}
+.dropdown .fa{
+    padding-right:5px;
+}
+.navbar-brand span{
+    padding-left: 10px
+}
+
+#user-logo{
+    padding: 5px;
+    margin: 0;
+}
+
+#user-logo img{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    box-shadow:-1px 1px 2px #FFFFFF,1px -1px 2px #fff;
+}
+#user-logo img:hover{
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -otransition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+/*======= 左边栏 =======  */
+.side-bar{
+    width:100%;
+}
+
+
+.menu-left-nest {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    padding:5px 0px;
+}
+
+.side-bar li i {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 15px;
+    width: 20px;
+    padding-right: 25px;
+}
+
+ul.sidenav {
+    margin: 0;
+    font-size: 14px;
+    line-height: 0.5em!important;
+    list-style: none!important;
+    padding: 0px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+ul.sidenav li {
+}
+ul.sidenav li a {
+    color:#D0D0D0 !important;
+    display: block;
+    font-size: 13px;
+    line-height: 25px;
+    list-style: none outside none;
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+ul.sidenav li a:hover ,.sidenav .active{
+    /* #252d3b */
+    color: white!important;
+    text-shadow: none;
+    border-left: 2px solid #ffffff;
+    padding-left: 28px;
+    position: relative;
+}
+ul.sidenav li a:hover:after,.sidenav .active:after{
+    border-bottom:6px solid #ffffff;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    width:0;
+    height:0;
+    position: absolute;
+    top:19px;
+    left: -6px;
+    content:"";
+    display:block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    tranform: rotate(90deg);
+}
+ul.sidenav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+ul.sidenav ul li {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    list-style: none outside none;
+}
+ul.sidenav ul li a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 13px;
+    font-weight: normal;
+    outline: 0 none;
+    padding-left: 30px;
+    /* transition: all 0.2s ease 0s;*/
+}
+ul.sidenav ul li a i {
+}
+ul.sidenav ul li a:hover {
+    background-color: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    color: #FFFFFF!important;
+}
+ul.sidenav ul ul li a {
+    color: #444;
+    padding-left: 40px;
+    background: #252d3b;
+    transition: all 0.2s ease 0s;
+}
+ul.sidenav ul ul li a:hover {
+    background-color: #D3CEB8;
+    color: #675C7C;
+}
+ul.sidenav h4 {
+    float: right !important;
+    margin-top: -2px;
+}
+
+/* 大屏幕 */
+@media (min-width: 1200px) {
+
+}
+ 
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+ 
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+    html,body{
+        overflow: auto;
+    }
+    .layout{
+        height: auto
+    }
+}
+@media (min-width: 768px){
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .sidenav-toggle {
+        margin-left: -15px;
+    }
+}
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {
+
+}
