@@ -1,0 +1,67 @@
+body{
+    font-size: 13px;
+    line-height: 1.52857143;
+    color: #585f69;
+    background-color: #f7f9fb;
+    height: 100%;
+}
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-info {
+border-left-color: #5bc0de;
+}
+.bs-callout-info h4{
+    color: #5bc0de;
+}
+.bs-callout-success {
+    border-left-color: #3c763d;
+}
+
+.bs-callout-success h4{
+    color: #5bc0de;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*=================================
+ * 登陆界面部分样式开始
+ * ===============================*/
+.p1{
+    padding: 15px;
+    color: #80A8CF;
+    font-size: 14px;
+}
+.page-top{
+    margin-top:10%;
+}
+
+.bg-fixed{
+    background-color: transparent;
+    background-size: 100% 100%; 
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*=================================
+ * 登陆界面部分样式结束
+ * ===============================*/
